@@ -4,8 +4,8 @@
 :root {
   --prim: #066dca;
   --prim-light: #f3f9ff;
-  --text-color: #222E48;
-  --pera: #404A60;
+  --text-color: #222e48;
+  --pera: #404a60;
   --secondary: #f37739;
   --white: #fff;
   --black: #000;
@@ -13,46 +13,46 @@
   --font-chakraPetch: "Chakra_Petch", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-    --font-sora: "Sora", sans-serif;
+  --font-sora: "Sora", sans-serif;
   --font-unbounded: "Unbounded", sans-serif;
 
-  --transition-fast: .3s ease-in-out;
-  --transition-slow: .5s ease-in-out;
+  --transition-fast: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
 }
 
-.ChakraPetch{
+.ChakraPetch {
   font-family: var(--font-chakraPetch);
 }
 
-.Inter{
+.Inter {
   font-family: var(--font-inter);
 }
 
-.Poppins{
+.Poppins {
   font-family: var(--font-poppins);
 }
 
-.Unbounded{
+.Unbounded {
   font-family: var(--font-unbounded);
 }
 
-.Sora{
+.Sora {
   font-family: var(--font-sora);
 }
 
-*{
+* {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: var(--font-poppins);
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 /* Navbar */
-.nav-menu li::after{
+.nav-menu li::after {
   content: "";
   position: absolute;
   top: 0;
@@ -63,19 +63,19 @@ body{
   transition: var(--transition-fast);
 }
 
-.nav-menu li:hover::after{
+.nav-menu li:hover::after {
   height: 100%;
 }
 
 /* Hero */
-.hero{
+.hero {
   background-image: url(../public/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.hero::after{
+.hero::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -100,7 +100,6 @@ body{
   animation: rotation 8s linear infinite;
 }
 
-
 @keyframes scalation {
   0% {
     transform: scale(1);
@@ -108,11 +107,43 @@ body{
   50% {
     transform: scale(0.5);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
-.element2{
+
+.element2 {
   animation: scalation 8s linear infinite;
 }
 
+@keyframes walking {
+  0% {
+    transform: translate(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(100px) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotate(360deg);
+  }
+}
+
+.element3 {
+  animation: walking 10s linear infinite;
+}
+
+.element4 {
+  animation: walking 10s linear infinite;
+}
+
+.element5 {
+  animation: scalation 8s linear infinite;
+}
+
+@media screen and (max-width: 767.98px) {
+  .hero::after {
+    height: 250px;
+  }
+}
