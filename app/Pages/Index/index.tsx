@@ -2,6 +2,7 @@
 
 import About from "./About/about";
 import Achievements from "./Achievements/achievements";
+import Articles from "./Articles/articles";
 import Courses from "./Courses/courses";
 import Features from "./Features/features";
 import Hero from "./Hero/hero";
@@ -16,6 +17,7 @@ function Index() {
       <Achievements />
       <Courses />
       <WhyChoose />
+      <Articles />
     </>
   );
 }
