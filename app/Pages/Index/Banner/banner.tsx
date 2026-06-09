@@ -8,7 +8,7 @@ import element5 from "@/public/element-05.png";
 function Banner() {
   return (
     <>
-      <div className="banner px-[4%] md:px-[6%] lg:px-[8%] xl:px-[10%] py-[6%] lg:py-[10%]">
+      <div className="banner px-[4%] md:px-[6%] lg:px-[8%] xl:px-[10%] pt-[6%] lg:pt-[10%]">
         <div className="banner-content w-full z-2 bg-[#076dcb] px-5 py-8 flex justify-center items-start flex-col rounded-lg relative">
           <span className="text-white font-semibold Sora pb-1">
             <i className="bi bi-book pe-2"></i>
