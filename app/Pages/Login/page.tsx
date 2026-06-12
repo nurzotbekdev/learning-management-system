@@ -11,6 +11,7 @@ import element3 from "@/public/element-03.png";
 import element4 from "@/public/element-04.png";
 import element5 from "@/public/element-05.png";
 import learningImage from "@/public/learning_image.png";
+
 import Banner from "../Index/Banner/banner";
 
 function Login() {

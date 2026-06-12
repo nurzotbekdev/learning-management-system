@@ -109,4 +109,3 @@ function Hero() {
 }
 
 export default Hero;
-//1:01:46 ga keldim
